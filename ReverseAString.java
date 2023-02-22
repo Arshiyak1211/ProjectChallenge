@@ -1,15 +1,14 @@
 package com.programs.in;
 
 public class ReverseAString {
-	public static void main(String[] args)
+	public static void main (String[] args)
 	{
-		int no=5432,rem,rev=0;
-		while(no!=0)
+		String name="Arshiya";
+		String rev="";
+		int leng=name.length();
+		for(int i=leng-1;i>=0;i--)
 		{
-			rem=no%10;
-			rev=rev*10+rem;
-			no=no/10;
-		
+			rev=rev+name.charAt(i);
 		}
 		System.out.println(rev);
 	}
